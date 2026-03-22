@@ -1,7 +1,5 @@
 # zpr25z
 
-## Dokładne instrukcje użycia znajdują się w dokumentacji końcowej projektu.
-
 ## Zależności
 
 ### Ubuntu 24.04
