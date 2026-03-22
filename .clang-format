@@ -1,0 +1,114 @@
+---
+# Base style
+BasedOnStyle: Google
+
+# Language settings
+Language: Cpp
+Standard: c++17
+
+# Indentation
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+IndentCaseLabels: true
+NamespaceIndentation: None
+
+# Line length
+ColumnLimit: 120
+
+# Braces and spacing
+BreakBeforeBraces: Attach
+SpaceBeforeCpp11BracedList: false
+
+# Space before parentheses
+SpaceBeforeParens: Never
+SpaceBeforeParensOptions:
+  AfterControlStatements: true
+  AfterFunctionDeclarationName: false
+  AfterFunctionDefinitionName: false
+
+# Spaces around operators
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeRangeBasedForLoopColon: true
+
+# Spaces in parentheses and brackets
+SpacesInParentheses: true
+SpacesInSquareBrackets: false
+SpacesInAngles: Never
+SpaceInEmptyParentheses: false
+
+# Spaces in containers
+SpacesInContainerLiterals: false
+Cpp11BracedListStyle: true
+
+# Pointer and reference alignment
+PointerAlignment: Left
+ReferenceAlignment: Left
+DerivePointerAlignment: false
+
+# Function declarations and calls
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowAllArgumentsOnNextLine: true
+BinPackParameters: false
+BinPackArguments: false
+
+# Include blocks
+IncludeBlocks: Merge
+IncludeCategories:
+  # C system headers
+  - Regex: '<[a-z_]+>'
+    Priority: 1
+  # C++ standard library
+  - Regex: '<[a-z_]+\.h>'
+    Priority: 2
+  - Regex: '<.*>'
+    Priority: 3
+  # Project headers
+  - Regex: '".*"'
+    Priority: 4
+SortIncludes: CaseInsensitive
+
+# Comments
+AlignTrailingComments: true
+SpacesBeforeTrailingComments: 2
+
+# Line breaks
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: false
+MaxEmptyLinesToKeep: 1
+
+# Constructor initializers
+BreakConstructorInitializers: BeforeColon
+ConstructorInitializerIndentWidth: 4
+
+# Control flow
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortBlocksOnASingleLine: Never
+
+# Class/struct formatting
+BreakBeforeInheritanceComma: false
+BreakInheritanceList: BeforeColon
+
+# Empty lines
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+# Access modifiers (public:, private:, etc.)
+AccessModifierOffset: -4
+IndentAccessModifiers: false
+
+# Penalties for breaking (lower = preferred)
+PenaltyBreakBeforeFirstCallParameter: 19
+PenaltyBreakComment: 300
+PenaltyBreakFirstLessLess: 120
+PenaltyBreakString: 1000
+PenaltyExcessCharacter: 1000000
+PenaltyReturnTypeOnItsOwnLine: 60
+
+# Other formatting
+AlignConsecutiveAssignments: None
+AlignConsecutiveDeclarations: None
+AlignOperands: Align
+CompactNamespaces: false
+FixNamespaceComments: true
